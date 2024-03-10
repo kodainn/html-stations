@@ -1,0 +1,73 @@
+body {
+    background-color: #C4C4C4;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+footer {
+    background-origin: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Important for responsiveness */
+}
+
+.card {
+    width: 290px;
+    height: auto;
+    margin: 20px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.card__img-top {
+    height: 182px;
+    width: 288px;
+    margin-bottom: 20px;
+}
+
+.card__title {
+    color: #282828;
+    font-size: 16px;
+}
+
+.card__description {
+    color: #282828;
+    font-size: 14px;
+    overflow: hidden; /* Ensures text doesn't overflow container */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowed text */
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        width: 100%; /* Full width for smaller devices */
+        margin: 10px 0; /* Adjust margin for smaller devices */
+        padding: 20px; /* Adjust padding for smaller devices */
+    }
+
+    .card__img-top {
+        width: 100%; /* Full width for smaller devices */
+        height: auto; /* Auto height */
+    }
+
+    .card__title {
+        font-size: 14px; /* Decrease font size for smaller devices */
+    }
+
+    .card__description {
+        display: none; /* Hide description for smartphones */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card__title,
+    .card__description {
+        font-size: 14px; /* Decrease font size for tablets */
+    }
+}

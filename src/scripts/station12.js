@@ -1,3 +1,3 @@
-function getData() {
+const getData = () => {
     return "Station12をクリア!"
 }
